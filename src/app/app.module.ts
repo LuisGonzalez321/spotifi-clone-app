@@ -9,6 +9,9 @@ import {NavbarComponent} from './components/shared/navbar/navbar.component';
 import {RouterModule} from "@angular/router";
 import {ROUTES} from "./app.routes";
 import {HttpClientModule} from '@angular/common/http';
+import { NoImagePipePipe } from './pipes/no-image-pipe.pipe';
+import { CardComponent } from './components/card/card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     SharedComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoImagePipePipe,
+    CardComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

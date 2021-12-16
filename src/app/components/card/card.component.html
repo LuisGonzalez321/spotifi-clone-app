@@ -1,0 +1,13 @@
+<div class="card-columns text-center  d-flex flex-wrap">
+  <div (click)="showArtist( item )" *ngFor="let item of items" class="card m-3 puntero" style="width: 300px;">
+    <img [src]="item.images | noImagePipe" alt="" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">
+        <span *ngFor="let artista of item.artists" class="badge rounded-pill bg-primary">
+          {{ artista.name }}
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
